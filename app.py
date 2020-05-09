@@ -3,7 +3,6 @@ from flaskext.markdown import Markdown
 import spacy 
 from spacy import displacy
 import pandas as pd
-import re
 nlp = spacy.load("en_core_web_sm")
 
 #Initialise app
