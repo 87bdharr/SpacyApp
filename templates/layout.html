@@ -29,7 +29,7 @@
               <a class="nav-link" href={{ url_for('index') }}>Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href={{ url_for('about') }}>About</a>
+              <a class="nav-link" href={{ url_for('about') }}>How does it work?</a>
             </li>
           </ul>
         </div>
@@ -38,11 +38,7 @@
       <main role="main" class="container">
         <header class="mt-6">
             <h1 class="header-h1">Named Entity Recognition</h1>
-            <p class="lead">This app is designed to detect Named Entities in text. A named entity 
-                is a real world object, and this app is designed to extract  Names, Locations, Organisations, Money values,
-                Organisations and much more.
-            </p>
-          </header>
+        </header>
 
             {% block content %}{% endblock %}
 

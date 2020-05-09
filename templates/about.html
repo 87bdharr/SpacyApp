@@ -1,8 +1,41 @@
 {% extends "layout.html" %}
 {% block content%}
 
-<p> If I type some text now, it should already be wrapped in 
-    a container.
+<p class="lead">Named Entity Recognition (NER) is the process of taking raw text, and identifying 
+    importat features such as names, dates, locations. This has many use cases,
+    for example, building sophisticated recommender engines for news websites 
+    based on your previously viewed content. 
 </p>
+
+<div class="row">
+    <div class="col-8">
+        <h2>Python & SpaCy- How this app works</h2>
+        <p>In essence, NER is teaching a program to how to read, and the
+            fantastic <a href="https://spacy.io/">SpaCy</a> library is perfect for doing this.
+            It's an  advanced and open-source Natural Language Processing (NLP) library for Python.
+            Using statistical models it builds from millions of lines worth of training data, SpaCy is able 
+            to extract meaning from text based on the content. For example, it's able to distinguish the word
+            "Amazon" as being the company, rather than the forest, based on the way it's used in a sentence.
+            This app supports the extraction of the following entity types:
+        </p>
+        <ul>
+            <li> PERSON: People, including fictional</li>
+            <li> ORG: Organisation, companies, agencies etc.</li>
+            <li> GPE: Geo-political Area, countrie, cities, states etc.</li>
+            <li> DATE: Absolute or relative dates or periods</li>
+            <li> MONEY: Monetary values, including unit</li>
+            <li> EVENT: Named hurricanes, battles, wars, sports events etc.</li>
+            <li> PRODUCT: Objects, vehices, foods etc.</li>
+        </ul>
+    </div>
+    <div class="col-4 border p-3 mb-2 bg-danger text-white align-self-center" >
+        <p class="text-center font-weight-bold"> This app will not extract every entity perfectly.</p> 
+        
+        <br>
+        
+        <p>This is because it has been trained on previous examples, and if you use a word it doesn't
+        recognise in that context, it will make its best effort to guess: but it may be wrong!
+        </p>   
+    </div>
 
 {% endblock content %}  
