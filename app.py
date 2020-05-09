@@ -4,7 +4,7 @@ import spacy
 from spacy import displacy
 import pandas as pd
 import re
-nlp = spacy.load('en')
+nlp = spacy.load("en_core_web_sm")
 
 #Initialise app
 app = Flask(__name__, static_url_path='')
