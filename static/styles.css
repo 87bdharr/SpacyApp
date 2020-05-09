@@ -234,3 +234,7 @@ html {
   padding-left: 1px;
   border-radius: 2px;
 }
+
+.navbar-toggler {
+  color: white;
+}
