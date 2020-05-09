@@ -4,6 +4,7 @@ import spacy
 from spacy import displacy
 import pandas as pd
 import re
+import en_core_web_md
 nlp = spacy.load('en')
 
 #Initialise app
