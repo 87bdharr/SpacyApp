@@ -174,14 +174,6 @@ html {
     margin-top: 40px;
   }
 
-.results {
-  /* background-color: rebeccapurple !important; */
-}
-
-.results mark {
-
-}
-
 .results br {
   display: none; /* this is hacky*/
 }
