@@ -6,12 +6,12 @@
   </p>
   <p> Grab some text and select which objects to extract from it using the filters.</p>
 
-        <form method="POST" action=/extract>
+         <form method="POST" action=/extract>
             <div class="row">
                 <div class="col">
                     <label>Enter your text here:</label>
                     <div class="form-group">
-                        <textarea class="index-user-input-textarea" name="rawtext" ></textarea>
+                        <textarea class="index-user-input-textarea rounded border-secondary" name="rawtext" ></textarea>
                     </div>
                     <div class="form-group">
                         <button class="btn btn-secondary" type="reset">Clear</button>
@@ -19,48 +19,42 @@
                     </div>
                 </div>
                 <div class="col">
-                    <label>Select your filters here:</label>
+                  <label>Select your filters here:</label>
                     <div class="form-group">
-                      <div class="row">
-                        <div class=col>
-                          <input type="checkbox" value="PERSON" name="checkbox-index" id='check-person' checked>
-                          <label class="label-entities-person" for="check-person">Person</label>
-                        </div>
-                        <div class=col>
-                          <input type="checkbox" value="ORG" id='check-organisation' name="checkbox-index" checked>
-                          <label class="label-entities-org" for="check-organisation">Organisation</label>
-                        </div>
-                        <div class=col>
-                          <input type="checkbox" id='check-GPE' value="GPE" name="checkbox-index" checked>
-                          <label class="label-entities-GPE" for="check-GPE">Geo-political Area</label>
-                        </div>  
-                      </div> 
-                      <div class="row"> 
-                        <div class=col>
-                          <input type="checkbox" value="DATE" id='check-date' name="checkbox-index" checked>
-                          <label class="label-entities-date" for="check-date">Date</label>
-                        </div>
-                        <div class=col>  
-                          <input type="checkbox" value="MONEY" id='check-money' name="checkbox-index" checked>
-                          <label class="label-entities-money" for="check-money">Money</label>
-                        </div>
-                        <div class=col>
-                          <input type="checkbox" value="EVENT" id='check-event' name="checkbox-index" checked>
-                          <label class="label-entities-event" for="check-even">Event</label>
-                        </div>
-                      </div>  
-                      <div class="row">
-                        <div class=col>
-                          <input type="checkbox" value="PRODUCT" id='check-prodct' name="checkbox-index" checked>
-                          <label class="label-entities-product" for="check-even">Product</label>
-                        </div>
-                      </div>
+                        <ul class="list-group border-secondary">
+                          <li class="list-group-item border-secondary">
+                            <input type="checkbox" value="PERSON" name="checkbox-index" id='check-person' checked>
+                            <label class="label-entities-person" for="check-person">Person</label>
+                          </li>
+                          <li class="list-group-item border-secondary">
+                            <input type="checkbox" value="ORG" id='check-organisation' name="checkbox-index" checked>
+                            <label class="label-entities-org" for="check-organisation">Organisation</label>
+                          </li>
+                          <li class="list-group-item border-secondary">
+                            <input type="checkbox" id='check-GPE' value="GPE" name="checkbox-index" checked>
+                            <label class="label-entities-GPE" for="check-GPE">Geo-political Area</label>
+                          </li>
+                          <li class="list-group-item border-secondary">
+                            <input type="checkbox" value="DATE" id='check-date' name="checkbox-index" checked>
+                            <label class="label-entities-date" for="check-date">Date</label>
+                          </li> 
+                          <li class="list-group-item border-secondary">
+                            <input type="checkbox" value="MONEY" id='check-money' name="checkbox-index" checked>
+                            <label class="label-entities-money" for="check-money">Money</label>
+                          </li>
+                          <li class="list-group-item border-secondary">
+                            <input type="checkbox" value="EVENT" id='check-event' name="checkbox-index" checked>
+                            <label class="label-entities-event" for="check-even">Event</label>
+                          </li>
+                          <li class="list-group-item border-secondary">
+                            <input type="checkbox" value="PRODUCT" id='check-prodct' name="checkbox-index" checked>
+                            <label class="label-entities-product" for="check-even">Product</label>
+                          </li>
+                        </ul>
                     </div>
                 </div>
-            </div> 
-                       
-        </form>
-               
+          </form>   
+      
 {% endblock content %}  
 
 
