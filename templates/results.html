@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content%}
+
+<div class="row">
+    <div class="col border m-2 p-4">
+        <div>
+            <h2>Original Text</h2>
+            {{ rawtext }}
+        </div>
+    </div>
+    <div class="col border m-2 p-4">
+        <div class="results">
+            <h2>Result Text</h2>
+            {{ displacy_result|markdown }}
+        </div>
+    </div>
+</div>
+{% endblock content %}  
